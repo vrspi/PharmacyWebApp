@@ -333,6 +333,10 @@
       "PackagePath": "staticwebassets\\assets\\images\\instagram\\img_9.jpg"
     },
     {
+      "Id": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\wwwroot\\assets\\images\\logo\\Health.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\Health.png"
+    },
+    {
       "Id": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\wwwroot\\assets\\images\\logo\\favourite_icon_1.png",
       "PackagePath": "staticwebassets\\assets\\images\\logo\\favourite_icon_1.png"
     },

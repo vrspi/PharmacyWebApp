@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RrAZYTMattOaW+be1K4bV/8lbFQivrIRqTo2eyZ+6mo=",
+  "Hash": "LLw/vjLmNTcHjfH23itTZwKAyIG39M0mFLK8deXAy3I=",
   "Source": "Pharmacy",
   "BasePath": "_content/Pharmacy",
   "Mode": "Default",
@@ -1687,6 +1687,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\images\\logo\\favourite_icon_2.png"
+    },
+    {
+      "Identity": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\wwwroot\\assets\\images\\logo\\Health.png",
+      "SourceId": "Pharmacy",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\wwwroot\\",
+      "BasePath": "_content/Pharmacy",
+      "RelativePath": "assets/images/logo/Health.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\images\\logo\\Health.png"
     },
     {
       "Identity": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\wwwroot\\assets\\images\\logo\\logo_1.png",

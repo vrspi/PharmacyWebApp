@@ -1,0 +1,50 @@
+﻿@model Pharmacy.ViewModels.Pharmacie
+
+@{
+    ViewData["Title"] = "AjouterPharmacy";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@section Title{
+    <title>Ajouter une pharmacie</title>
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h1 class="text-center my-4">Ajouter Pharmacie</h1>
+
+            <form asp-action="AjouterPharmacy" method="post" class="card p-3 bg-light">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="form-group">
+                    <label asp-for="Name" class="control-label">Name</label>
+                    <input asp-for="Name" class="form-control" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Address" class="control-label">Address</label>
+                    <input asp-for="Address" class="form-control" />
+                    <span asp-validation-for="Address" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Latitude" class="control-label">Latitude</label>
+                    <input asp-for="Latitude" class="form-control" />
+                    <span asp-validation-for="Latitude" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Longitude" class="control-label">Longitude</label>
+                    <input asp-for="Longitude" class="form-control" />
+                    <span asp-validation-for="Longitude" class="text-danger"></span>
+                </div>
+                <div class="form-group text-center">
+                    <input type="submit" value="Create" class="btn btn-primary" />
+                </div>
+            </form>
+
+            <div class="text-center mt-3">
+                <a asp-action="Index" class="btn btn-link">Back to List</a>
+            </div>
+        </div>
+    </div>
+</div>

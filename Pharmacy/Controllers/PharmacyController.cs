@@ -41,8 +41,8 @@ namespace Pharmacy.Controllers
         [HttpPost]
         public IActionResult AjouterPharmacy(ViewModels.Pharmacie pharmacie)
         {
-
-            if (ModelState.IsValid)
+            
+			if (ModelState.IsValid)
             {
                 pharmacyRepository.AddPharmacy(pharmacyTools.ConvertFromViewModelPharmacie(pharmacie));
                 return Content("Added");

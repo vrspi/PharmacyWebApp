@@ -8140,28 +8140,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\khair\\.nuget\\packages\\": {},
-    "D:\\New folder\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\chiba\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\Pharmacy.csproj",
+      "projectUniqueName": "C:\\Users\\chiba\\OneDrive\\Documents\\Pharmacy-project\\PharmacyWebApp\\Pharmacy\\Pharmacy.csproj",
       "projectName": "Pharmacy",
-      "projectPath": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\Pharmacy.csproj",
-      "packagesPath": "C:\\Users\\khair\\.nuget\\packages\\",
-      "outputPath": "D:\\Pharmacy\\PharmacyWebApp\\Pharmacy\\obj\\",
+      "projectPath": "C:\\Users\\chiba\\OneDrive\\Documents\\Pharmacy-project\\PharmacyWebApp\\Pharmacy\\Pharmacy.csproj",
+      "packagesPath": "C:\\Users\\chiba\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\chiba\\OneDrive\\Documents\\Pharmacy-project\\PharmacyWebApp\\Pharmacy\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\New folder\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\khair\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\chiba\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -8228,7 +8220,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

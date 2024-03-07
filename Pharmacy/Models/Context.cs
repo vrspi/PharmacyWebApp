@@ -9,6 +9,11 @@ namespace Pharmacy.Models
         public DbSet<Medicament> medicaments { get; set; }
         public DbSet<Pharmacie> pharmacies { get; set; }
         public DbSet<Stock> stocks { get; set; }
+        public DbSet<City> citys { get; set; }
+        public DbSet<Image> images { get; set; }
+        public DbSet<ParaPharmacy> parapharmacy { get; set; }
+        public DbSet<Stock_Produit> stock_produit { get; set; }
+        public DbSet<Produit> produits { get; set; }
 
 
 

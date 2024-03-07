@@ -1,0 +1,115 @@
+﻿
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+@section Title {
+    <title>Profile</title>
+}
+@section Style{
+        <style>
+        .horizontal-menu {
+            display: flex;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            gap: 10px;
+            padding: 10px 0;
+        }
+
+            .horizontal-menu .nav-link {
+                flex: 0 0 auto; /* Prevent flex items from shrinking, ensuring scrolling */
+            }
+
+            /* Optional: Hide scrollbar aesthetically */
+            .horizontal-menu::-webkit-scrollbar {
+                display: none;
+            }
+
+        .horizontal-menu {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
+        </style>
+}
+<div class="container-fluid">
+
+    <div class="row">
+        
+            <!-- Side Menu -->
+        <!-- Side Menu -->
+        <nav class="col-md-3 col-lg-2 d-none d-md-block bg-light sidebar" id="sidebar">
+            <div class="sidebar-sticky pt-3">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="btn btn-primary nav-link active" href="#">Informations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Messages</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+            <div class="d-block d-md-none" style="margin-top:50px;">
+                <div class="horizontal-menu">
+                    <a class="btn btn-primary nav-link active" href="#">Informations</a>
+                    <a class="nav-link" href="#">Statistics</a>
+                    <a class="nav-link" href="#">Products</a>
+                    <a class="nav-link" href="#">Orders</a>
+                    <a class="nav-link" href="#">Messages</a>
+                </div>
+            </div>
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Pharmacy Information</h1>
+                </div>
+           
+                <!-- Pharmacy Information Fields -->
+                <form>
+                    <div class="form-group">
+                        <label>Name</label>
+                        <input type="text" class="form-control" value="Pharmacy Name" >
+                    </div>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" class="form-control" value="1234 Street Name" >
+                    </div>
+                    <div class="form-group">
+                        <label>Latitude</label>
+                        <input type="text" class="form-control" value="40.7128" >
+                    </div>
+                    <div class="form-group">
+                        <label>Longitude</label>
+                        <input type="text" class="form-control" value="-74.0060" >
+                    </div>
+                    <div class="form-group">
+                        <label>Contact Number</label>
+                        <input type="tel" class="form-control" value="+1 234 567 890" >
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" class="form-control" value="pharmacy@example.com" >
+                    </div>
+                    <div class="text-right" style="margin-bottom:15px;">
+                        <button type="button" class="btn btn-primary">Edit Information</button>
+                    </div>
+            </form>
+        </main>
+    </div>
+</div>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+            
+

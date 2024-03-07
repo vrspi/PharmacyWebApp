@@ -51,5 +51,12 @@ namespace Pharmacy.Controllers
             return View(pharmacie);
         }
 
+        public IActionResult Profile()
+        {
+
+
+            return View();
+        }
+
     }
 }

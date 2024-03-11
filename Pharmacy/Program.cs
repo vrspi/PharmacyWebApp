@@ -9,6 +9,8 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<Context>();
 builder.Services.AddScoped<IPharmacyRepository, PharmacyRepository>();
 builder.Services.AddScoped<IPharmacyTools, PharmacyTools>();
+builder.Services.AddScoped<IProduitRepository, ProduitRepository>();
+builder.Services.AddScoped<IProduitTools, ProduitTools>();
 
 var app = builder.Build();
 

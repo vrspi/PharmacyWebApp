@@ -22,7 +22,10 @@ namespace Pharmacy.Controllers
         {
             return View();
         }
-
+        public IActionResult PartialSection()
+        {
+            return PartialView("_Partialsection");
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

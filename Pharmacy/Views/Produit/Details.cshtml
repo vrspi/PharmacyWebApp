@@ -1,1 +1,253 @@
-﻿
+﻿@model Pharmacy.Models.Produit
+
+
+@{
+	ViewData["Title"] = "Details";
+	Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+@section Title {
+	<title>Details de produit</title>
+}
+@section Style {
+	<style>
+		#breadcrumb-section {
+			background-image: url('/assets/images/background/bg_1.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	</style>
+}
+
+
+<div id="Partialzone"></div>
+
+<section class="details-section sec-ptb-100 pb-0 clearfix">
+	<div class="container">
+
+		<div class="row mb-100 justify-content-lg-between justify-content-md-between justify-content-sm-center">
+			<div class="col-lg-6 col-md-5 col-sm-8 col-xs-12">
+				<div class="details-image clearfix">
+					<div class="tab-content">
+						<div id="image-tab-1" class="tab-pane active">
+							<img src="/assets/images/details/img_1.jpg" alt="image_not_found">
+						</div>
+						<div id="image-tab-2" class="tab-pane fade">
+							<img src="/assets/images/details/img_2.jpg" alt="image_not_found">
+						</div>
+						<div id="image-tab-3" class="tab-pane fade">
+							<img src="/assets/images/details/img_7.jpg" alt="image_not_found">
+						</div>
+						<div id="image-tab-4" class="tab-pane fade">
+							<img src="/assets/images/details/img_4.jpg" alt="image_not_found">
+						</div>
+					</div>
+
+					<div class="image-tab-nav ul-li-block">
+						<ul class="nav" role="tablist">
+							<li>
+								<a class="active" data-toggle="tab" href="#image-tab-1">
+									<img src="/assets/images/details/img_1.jpg" alt="image_not_found">
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#image-tab-2">
+									<img src="/assets/images/details/img_2.jpg" alt="image_not_found">
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#image-tab-3">
+									<img src="/assets/images/details/img_7.jpg" alt="image_not_found">
+								</a>
+							</li>
+							<li>
+								<a data-toggle="tab" href="#image-tab-4">
+									<img src="/assets/images/details/img_4.jpg" alt="image_not_found">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
+				<div class="details-content pl-20">
+					<span class="post-type mb-15">@Model.Libelle</span>
+					<h2 class="item-title mb-15">@Model.Description</h2>
+					<div class="rating-star ul-li mb-30 clearfix">
+						<ul class="float-left mr-2">
+							<li class="active"><i class="las la-star"></i></li>
+							<li class="active"><i class="las la-star"></i></li>
+							<li class="active"><i class="las la-star"></i></li>
+							<li class="active"><i class="las la-star"></i></li>
+							<li><i class="las la-star"></i></li>
+						</ul>
+						<span class="review-text">(12 Reviews)</span>
+					</div>
+					<span class="item-price mb-30">@Model.Prix DH</span>
+					<p class="mb-40">
+						@Model.Description
+					</p>
+					<div class="quantity-form mb-30 clearfix">
+						<strong class="list-title">Quantity:</strong>
+						<div class="quantity-input">
+							<form action="#">
+								<span class="input-number-decrement">–</span>
+								<input class="input-number-1" type="text" value="1">
+								<span class="input-number-increment">+</span>
+							</form>
+						</div>
+					</div>
+					<div class="btns-group ul-li mb-30">
+						<ul class="clearfix">
+							<li><a href="#!" class="btn bg-royal-blue">Add to Cart</a></li>
+							<li><a href="#!" data-toggle="tooltip" data-placement="top" title="" data-original-title="Compare Product"><i class="las la-sync"></i></a></li>
+							<li><a href="#!" data-toggle="tooltip" data-placement="top" title="" data-original-title="Add To Wishlist"><i class="lar la-heart"></i></a></li>
+						</ul>
+					</div>
+					<div class="info-list ul-li-block">
+						<ul class="clearfix">
+							<li><strong class="list-title">SKU:</strong> HO558</li>
+							<li><strong class="list-title">Category:</strong> <a href="#!">Medical Equipment</a></li>
+							<li class="tag-list ul-li">
+								<strong class="list-title">Tags:</strong>
+								<ul class="clearfix">
+									<li><a href="#!">Medicine</a></li>
+									<li><a href="#!">trendy</a></li>
+									<li><a href="#!">new arrival</a></li>
+								</ul>
+							</li>
+							<li class="social-icon ul-li">
+								<strong class="list-title">Share:</strong>
+								<ul class="clearfix">
+									<li><a href="#!"><i class="lab la-facebook"></i></a></li>
+									<li><a href="#!"><i class="lab la-twitter"></i></a></li>
+									<li><a href="#!"><i class="lab la-instagram"></i></a></li>
+									<li><a href="#!"><i class="lab la-pinterest-p"></i></a></li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="information-area">
+			<div class="tabs-nav ul-li mb-40">
+				<ul class="nav" role="tablist">
+					<li>
+						<a class="active" data-toggle="tab" href="#description-tab">Description</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#information-tab">Additional information</a>
+					</li>
+					<li>
+						<a data-toggle="tab" href="#reviews-tab">Reviews</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="tab-content">
+				<div id="description-tab" class="tab-pane active">
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+							<p class="mb-30">
+								Know Who Your Target Audience is. The first step to writing product descriptions is to define your target audience. Hoodie is the most populat and trending proucts  for both men’s an women in winter season. Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker takes the takable look and sound of Marshall, unplugs the chords, and takes the show on the road.
+							</p>
+							<p class="mb-30">
+								Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is both articulate &amp; pronounced. The analogue knobs allow you to fine tune the controls to your personal preferences while the guitar-influenced.
+							</p>
+							<div class="info-list ul-li-block">
+								<ul class="clearfix">
+									<li>Downloadable/Digital Products, Virtual Products</li>
+									<li>Any Product types that You want – Simple, Configurable</li>
+									<li>Inventory Management with Backordered items</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="information-tab" class="tab-pane fade">
+					<h3 class="title-text mb-30">Additional Information</h3>
+					<div class="table-wrap">
+						<table class="table table-striped">
+							<tbody>
+								<tr>
+									<td><strong>Category</strong></td>
+									<td>Medical Equipment</td>
+								</tr>
+								<tr>
+									<td><strong>Color</strong></td>
+									<td>Red, Gree, Blue, Black, White</td>
+								</tr>
+								<tr>
+									<td><strong>Quantity</strong></td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td><strong>Type Of Packing</strong></td>
+									<td>Paper Box</td>
+								</tr>
+								<tr>
+									<td><strong>Warranty</strong></td>
+									<td>1.5 Year</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div id="reviews-tab" class="tab-pane fade">
+					<div class="row">
+						<div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
+							<h3 class="title-text mb-15">Write a Review</h3>
+							<p class="mb-30">Your email address will not published. Required fieled are marked.</p>
+							<div class="rating-star ul-li mb-70 clearfix">
+								<span class="review-text float-left mr-3">Your Review:</span>
+								<ul class="clearfix">
+									<li class="active"><i class="las la-star"></i></li>
+									<li class="active"><i class="las la-star"></i></li>
+									<li class="active"><i class="las la-star"></i></li>
+									<li class="active"><i class="las la-star"></i></li>
+									<li><i class="las la-star"></i></li>
+								</ul>
+							</div>
+							<form action="#">
+								<div class="form-item">
+									<textarea name="message" placeholder="Your Message"></textarea>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="form-item">
+											<input type="text" name="name" placeholder="Full Name*">
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="form-item">
+											<input type="email" name="email" placeholder="Your Email">
+										</div>
+									</div>
+								</div>
+								<button type="button" class="btn bg-royal-blue">submit now</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+@section scripts {
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$('#Partialzone').load('@Url.Action("PartialSection", "Home")');
+		});
+	</script>
+}

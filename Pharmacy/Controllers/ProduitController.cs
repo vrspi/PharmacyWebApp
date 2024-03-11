@@ -28,8 +28,14 @@ namespace Pharmacy.Controllers
         [Route("Produit/{id}")]
         public IActionResult Details(int id)
         {
-            return View(produitRepository.GetProduit(id));
-        }
+			var product = produitRepository.GetProduit(id);
+			if (product == null)
+			{
+				return NotFound();
+			}
+
+			return View(product);
+		}
 
         [Route("Produit/AjouterProduit")]
         public IActionResult AjouterProduit()

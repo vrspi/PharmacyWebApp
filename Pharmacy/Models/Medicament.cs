@@ -12,7 +12,7 @@
         public Categorie Categorie { get; set; }
         public int CategorieId { get; set;}
         public IList<Stock> Stocks { get; set; }
-        public IList<Image> Images { get; set; }
+        public IList<ImageMedicament> ImageMedicament { get; set; }
 
     }
 }

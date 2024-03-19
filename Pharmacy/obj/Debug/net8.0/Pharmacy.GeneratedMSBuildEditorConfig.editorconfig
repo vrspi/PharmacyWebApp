@@ -38,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfUGFydGlhbHNlY3Rpb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/chiba/OneDrive/Documents/Projet_Pharmacy/PharmacyWebApp/Pharmacy/Views/Image/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW1hZ2VcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/chiba/OneDrive/Documents/Projet_Pharmacy/PharmacyWebApp/Pharmacy/Views/Pharmacy/AjouterPharmacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGhhcm1hY3lcQWpvdXRlclBoYXJtYWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -72,6 +76,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/chiba/OneDrive/Documents/Projet_Pharmacy/PharmacyWebApp/Pharmacy/Views/Shared/_MainLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NYWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/chiba/OneDrive/Documents/Projet_Pharmacy/PharmacyWebApp/Pharmacy/Views/Shared/_partialsection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9wYXJ0aWFsc2VjdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/chiba/OneDrive/Documents/Projet_Pharmacy/PharmacyWebApp/Pharmacy/Views/Shared/_ValidationScriptsPartial.cshtml]

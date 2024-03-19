@@ -26,6 +26,15 @@ namespace Pharmacy.Models
             optionsBuilder.UseSqlServer("Server=.\\SQLExpress;Database=Pharmacy;Trusted_Connection=true;Encrypt=True;TrustServerCertificate=True;");
         }
 
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Image>()
+                .HasDiscriminator<string>("ImageType")
+                .HasValue<ImageMedicament>("Medicament")
+                .HasValue<ImageProduit>("Produit");
+        }
 
     }
 }
